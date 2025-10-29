@@ -6,7 +6,7 @@ O sistema gerencia o ciclo completo de um projeto de horta comunitária: do plan
 
 🏛️ Entidades Centrais do Banco de Dados
 O banco de dados é estruturado em torno de quatro entidades principais:
-``text
+```text
 +------------------+--------------------------------------+-----------------------------------------+
 |     ENTIDADE     |               PROPÓSITO              |             RELAÇÕES CHAVE              |
 +==================+======================================+=========================================+
@@ -20,7 +20,7 @@ O banco de dados é estruturado em torno de quatro entidades principais:
 +------------------+--------------------------------------+-----------------------------------------+
 | Planta           | O que está sendo cultivado.          | Relaciona-se com Canteiro.              |
 +------------------+--------------------------------------+-----------------------------------------+
-``
+```
 
 🔄 Fluxo de Funcionamento (Ações e Dependências)
 O funcionamento do sistema segue um ciclo lógico:
