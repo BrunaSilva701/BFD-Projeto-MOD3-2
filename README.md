@@ -1,6 +1,6 @@
 # Projeto-BFD-MOD3-2-BancoDeDados
 
-##🥕 Projeto Horta Comunitária: Resumo do Sistema
+🥕 Projeto Horta Comunitária: Resumo do Sistema
 🎯 Objetivo Resumido
 O sistema gerencia o ciclo completo de um projeto de horta comunitária: do plantio realizado por voluntários até a doação dos produtos colhidos a instituições de caridade.
 
@@ -22,7 +22,7 @@ O banco de dados é estruturado em torno de quatro entidades principais:
 +------------------+--------------------------------------+-----------------------------------------+
 ```
 
-##🔄 Fluxo de Funcionamento (Ações e Dependências)
+🔄 Fluxo de Funcionamento (Ações e Dependências)
 O funcionamento do sistema segue um ciclo lógico:
 
 Montagem: O Voluntario usa um Canteiro para o Cultivo/Plantio de uma determinada Planta.
