@@ -1,14 +1,15 @@
-INSERT INTO `Voluntario` (`Nome`) VALUES
-('Maria Oliveira'),
-('Pedro Rocha'),
-('Juliana Lima'),
-('Ricardo Souza'),
-('Sofia Mendes'),
-('Gabriel Ferreira'),
-('Laura Nogueira'),
-('Mateus Gomes'),
-('Alice Barros'),
-('Bernardo Pires');
+INSERT INTO Voluntario (Nome, Funcao) VALUES
+('Maria Oliveira', 'Plantio'),
+('Pedro Rocha', 'Colheita'),
+('Juliana Lima', 'Irrigação'),
+('Ricardo Souza', 'Adubação'),
+('Sofia Mendes', 'Controle de Pragas'),
+('Gabriel Ferreira', 'Limpeza'),
+('Laura Nogueira', 'Plantio'),
+('Mateus Gomes', 'Colheita'),
+('Alice Barros', 'Manutenção'),
+('Bernardo Pires', 'Distribuição');
+
 
 INSERT INTO `Instituicao` (`CNPJ`, `Nome`) VALUES
 ('11223344000101', 'Abrigo Florescer'),
