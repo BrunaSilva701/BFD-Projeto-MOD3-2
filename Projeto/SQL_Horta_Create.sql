@@ -29,6 +29,7 @@ USE `mydb` ;
 CREATE TABLE IF NOT EXISTS `mydb`.`Voluntario` (
   `CPF` INT NOT NULL AUTO_INCREMENT,
   `Nome` VARCHAR(45) NOT NULL,
+  `Funcao` VARCHAR(20),
   PRIMARY KEY (`CPF`))
 ENGINE = InnoDB;
 
