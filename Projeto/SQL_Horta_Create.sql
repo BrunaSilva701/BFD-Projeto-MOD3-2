@@ -46,28 +46,21 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Cultivo/Plantio`
+-- Table `mydb`.`CultivoPlantio`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Cultivo/Plantio` (
-  `idCultivo/Plantio` INT NOT NULL AUTO_INCREMENT,
+CREATE TABLE IF NOT EXISTS `Cultivo_Plantio` (
+  `idCultivo` INT NOT NULL AUTO_INCREMENT,
   `DataHora` DATETIME NOT NULL,
   `Status` VARCHAR(45) NOT NULL,
   `Voluntario_CPF` INT NOT NULL,
   `Canteiro_idCanteiro` INT NOT NULL,
-  PRIMARY KEY (`idCultivo/Plantio`),
-  INDEX `fk_Cultivo/Plantio_Voluntario1_idx` (`Voluntario_CPF` ASC) VISIBLE,
-  INDEX `fk_Cultivo/Plantio_Canteiro1_idx` (`Canteiro_idCanteiro` ASC) VISIBLE,
-  CONSTRAINT `fk_Cultivo/Plantio_Voluntario1`
-    FOREIGN KEY (`Voluntario_CPF`)
-    REFERENCES `mydb`.`Voluntario` (`CPF`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE,
-  CONSTRAINT `fk_Cultivo/Plantio_Canteiro1`
-    FOREIGN KEY (`Canteiro_idCanteiro`)
-    REFERENCES `mydb`.`Canteiro` (`idCanteiro`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE)
-ENGINE = InnoDB;
+  `Planta_idPlanta` INT NOT NULL,
+  PRIMARY KEY (`idCultivo`),
+  FOREIGN KEY (`Voluntario_CPF`) REFERENCES `Voluntario`(`CPF`),
+  FOREIGN KEY (`Canteiro_idCanteiro`) REFERENCES `Canteiro`(`idCanteiro`),
+  FOREIGN KEY (`Planta_idPlanta`) REFERENCES `Planta`(`idPlanta`)
+) ENGINE=InnoDB;
+
 
 
 -- -----------------------------------------------------
