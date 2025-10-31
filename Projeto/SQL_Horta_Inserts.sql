@@ -47,17 +47,18 @@ INSERT INTO `Planta` (`Nome`, `Quantidade`) VALUES
 ('Beterraba', '120 sementes'),
 ('Manjericão', '5 pés');
 
-INSERT INTO `Cultivo/Plantio` (`DataHora`, `Status`, `Voluntario_CPF`, `Canteiro_idCanteiro`) VALUES
-('2025-01-10 10:00:00', 'Plantado', 1, 1),
-('2025-01-15 11:30:00', 'Crescendo', 2, 2),
-('2025-01-20 14:00:00', 'Colhido', 3, 3),
-('2025-02-01 09:00:00', 'Crescendo', 4, 4),
-('2025-02-10 13:00:00', 'Plantado', 5, 5),
-('2025-03-05 10:30:00', 'Colhido', 6, 6),
-('2025-03-15 15:00:00', 'Crescendo', 7, 7),
-('2025-04-01 08:00:00', 'Plantado', 8, 8),
-('2025-04-10 12:00:00', 'Colhido', 9, 9),
-('2025-04-20 16:00:00', 'Crescendo', 10, 10);
+INSERT INTO `Cultivo_Plantio` (`DataHora`, `Status`, `Voluntario_CPF`, `Canteiro_idCanteiro`, `Planta_idPlanta`) VALUES
+('2025-01-10 10:00:00', 'Plantado', 1, 1, 1),
+('2025-01-15 11:30:00', 'Crescendo', 2, 2, 2),
+('2025-01-20 14:00:00', 'Colhido', 3, 3, 3),
+('2025-02-01 09:00:00', 'Crescendo', 4, 4, 4),
+('2025-02-10 13:00:00', 'Plantado', 5, 5, 5),
+('2025-03-05 10:30:00', 'Colhido', 6, 6, 6),
+('2025-03-15 15:00:00', 'Crescendo', 7, 7, 7),
+('2025-04-01 08:00:00', 'Plantado', 8, 8, 8),
+('2025-04-10 12:00:00', 'Colhido', 9, 9, 9),
+('2025-04-20 16:00:00', 'Crescendo', 10, 10, 10);
+
 
 
 INSERT INTO `Canteiro_has_Planta` (`Canteiro_idCanteiro`, `Planta_idPlanta`) VALUES
